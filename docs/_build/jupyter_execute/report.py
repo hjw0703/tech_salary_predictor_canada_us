@@ -142,7 +142,7 @@ plt1.save("../results/test_data_result.png")
 # ---
 # Hyperparameter searching: the model is well trained when the hyperparameter, alpha, equals to 0.091. With a greater alpha, the model is under-fitted, whereas the model is over-fitted if alpha is getting smaller than 0.091.
 # ```
-# Applying the fitted model to the test data set, we get  a testing $R^2$ of {glue:text}`R2_test`.<br>
+# Applying the fitted model to the test data set, we get a testing $R^2$ of {glue:text}`R2_test`.<br>
 
 # After identifying the most important features, we built multiple linear regression models with the annual salary as our response variable and the following predictors: years of coding experience, programming languages used, education level, and role. Since our target is a continuous variable, regression made sense here.<br>
 # 
@@ -155,7 +155,12 @@ plt1.save("../results/test_data_result.png")
 # ---
 # Predicted salary VS. observed salary: the fitted model can fairly predict the salary.
 # ```
-# In the future, we plan to do two important changes; exploring other explanatory variables that might give us a better score, and including the United States in our model. In order to identify the best features that contribute to the prediction, we will include all the sensible columns in the original survey, and perform model and feature selection. We hope that this will help us discover more features that are important for the annual compensation prediction of tech employees.
+
+# ### Conclusions
+# 
+# In brief, our linear regression model uses 4 features (that are years of coding experience, programming languages used, education level, and role) to predict salary. It predicts with a $R^2$ score of {glue:text}`R2_test` on the test data set, which performs fairly well. Meanwhile, our work has shown that the salary is closely related to these 4 features. 
+# 
+# However, there are still limitations in our work. We just used a small part of data from the survey and we are inclined to explore more features to boost the robustness and accuracy of our prediction results. Hence, in the future, we plan to do two important changes; exploring other explanatory variables that might give us a better score, and including the United States in our model. In order to identify the best features that contribute to the prediction, we will include all the sensible columns in the original survey, and perform model and feature selection. We hope that this will help us discover more features that are important for the annual compensation prediction of tech employees.
 
 # ## Reference
 # 

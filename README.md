@@ -8,10 +8,6 @@
 -   Khalid Abdilahi
 -   Vera Cui
 
-Demo of a data analysis project for DSCI 522 (Data Science workflows); a
-course in the Master of Data Science program at the University of
-British Columbia.
-
 ### About
 
 The aim of this project is to allow tech employees in Canada to get a
@@ -48,11 +44,6 @@ potentially associated with annual compensation.
 
 -   GNU make 4.2.1
 
-The Python dependencies can be found in the tech_salary_pred_env.yaml
-file. However, you don’t have to manually install these dependencies.
-You need to install conda (v4.10.3) and then follow the installation
-instructions described below.
-
 There are two suggested ways to run this analysis:
 
 #### 1. Using Docker
@@ -65,16 +56,20 @@ the command line to navigate to the root of this project on your
 computer, and then type the following (filling in PATH_ON_YOUR_COMPUTER
 with the absolute path to the root of this project on your computer).
 
-    docker run --rm -v $PWD:/home/tech_salary_predictor_canada_us ssingh90/tech_salary_predictor_canada_us make -C '/home/tech_salary_predictor_canada_us' all
+    docker run --rm -v PATH_ON_YOUR_COMPUTER:/home/tech_salary_predictor_canada_us ssingh90/tech_salary_predictor_canada_us make -C '/home/tech_salary_predictor_canada_us' all
 
 To reset the repo to a clean state, with no intermediate or results
 files, run the following command at the command line/terminal from the
 root directory of this project:
 
-    docker run --rm -v $PWD:/home/tech_salary_predictor_canada_us ssingh90/tech_salary_predictor_canada_us make -C '/home/tech_salary_predictor_canada_us' clean
+    docker run --rm -v PATH_ON_YOUR_COMPUTER:/home/tech_salary_predictor_canada_us ssingh90/tech_salary_predictor_canada_us make -C '/home/tech_salary_predictor_canada_us' clean
 
 #### 2. Without using Docker
 
+The Python dependencies can be found in the tech_salary_pred_env.yaml
+file. However, you don’t have to manually install these dependencies.
+You need to install conda (v4.10.3) and then follow the installation
+instructions described below.
 Note: You need tech_salary_pred_env.yaml file to do the following steps
 for this option.
 
